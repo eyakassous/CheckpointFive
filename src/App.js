@@ -1,25 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './profile/Component.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const fullName = "eya kassous";
+  const bio = "take it easy";
+  const profession = "etudiante";
+  const styleObject =
+   { textAlign: 'center', 
+   backgroundColor: '	lightpink', 
+  width: '50%',
+  border:'3px solid black',
+marginLeft: '25%',
+marginTop: '12.5%'}
+
+const handleName=(x)=>{
+  alert(x);
 }
 
+  return (
+  <div style={styleObject}>
+    <Profile fullName={fullName} bio={bio} profession={profession} handleName={handleName}>
+    <img src="/img.webp" alt="myimage" ></img>
+    </Profile>
+  </div>
+  );
+  
+  
+}
 export default App;
+// function App() {
+//   const props={
+//   fullName : "eyakassous",
+//   bio : "###",
+//   profession : "etudiante"} 
+//   const styleObject = { textAlign: 'center', backgroundColor: 'lightBlue', color:'red'}
+//   return (
+//    <div style={styleObject}>
+//     <profile fullName={fullName} bio={bio} profession={profession}>
+//     <h1>hello</h1>
+//    <img src="/img.webp" alt="myimage" ></img>
+//     </profile>
+//    </div>
+//   );
+// }
+
+// export default App;
