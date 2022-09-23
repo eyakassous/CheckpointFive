@@ -3,7 +3,7 @@ import Profile from './profile/Component.js';
 
 function App() {
   const fullName = "eya kassous";
-  const bio = "take it easy";
+  const bio = "take it easy stupid";
   const profession = "etudiante";
   const styleObject =
    { textAlign: 'center', 
